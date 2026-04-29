@@ -60,6 +60,17 @@ let ouput = array.find(function (val) {
 console.log(ouput);
 
 //indexOf: Find the position (index) of a value in an array (or string)
-
 let index = array.indexOf(30);//-1 if value does not exist
 console.log(index); 
+
+
+//Object
+let obj = {
+    name: "Suman",
+    class: "B.tech CSE",
+    rollNo : 2305609
+}
+
+// Object.freeze(obj); if we want value should not be changed
+obj.name ="Raman"
+console.log(obj.name);
