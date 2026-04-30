@@ -87,3 +87,17 @@ async function getUsers() {
 }
 
 getUsers();
+
+
+//Destructuring: Taking values out of an object or array and storing them into variables in a shortcut way
+
+let user = {
+    name: "Suman",
+    age: 20,
+    city: "Delhi"
+};
+
+let { name, age } = user;
+
+console.log(name); // Suman
+console.log(age);  // 20
