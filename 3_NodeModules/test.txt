@@ -1,1 +1,10 @@
-hey there!!
+hey there  ....It is a Async Call !!
+
+Name - Suman Devi
+Roll No. 2305609
+Branch - CSE 6th B
+It is a sync Call to append data into the file !!
+It is a sync Call to append data into the file !!
+It is a sync Call to append data into the file !!15
+It is a sync Call to append data into the file !!
+It is a sync Call to append data into the file !!15
