@@ -1,3 +1,22 @@
+// const http = require("http");
+// const url = require("url");
+
+// const server = http.createServer((req, res) => {
+
+//     const myUrl = url.parse(req.url, true);
+
+//     console.log("Pathname:", myUrl.pathname);
+//     console.log("Query:", myUrl.query);
+
+//     res.end("URL Module Example");
+
+// });
+
+// server.listen(8000, () => {
+//     console.log("Server Started");
+// });
+
+
 const http = require("http");
 const fs = require("fs");
 const url = require("url");
@@ -38,3 +57,18 @@ const myServer = http.createServer((req, res) => {
 myServer.listen(8000, () => {
     console.log('Server Started!');
 });
+
+
+// const server = http.createServer((req, res) => {
+
+//     const myUrl = new URL(req.url, `http://${req.headers.host}`);
+
+//     console.log(myUrl.pathname);
+
+//     console.log(myUrl.searchParams.get("name"));
+
+//     res.end("Hello");
+
+// });
+
+// server.listen(8000);
