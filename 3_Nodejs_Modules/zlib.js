@@ -17,42 +17,37 @@ readStream.pipe(gzip).pipe(writeStream);
 console.log("File Compressed Successfully");
 
 
-// Compresses string
-const zlib = require("zlib");
+// // Compresses string
+// const text = "Hello Node.js";
 
-const text = "Hello Node.js";
+// // Compress
+// zlib.gzip(text, (err, compressedData) => {
 
-// Compress
-zlib.gzip(text, (err, compressedData) => {
+//     console.log("Compressed:");
+//     console.log(compressedData);
 
-    console.log("Compressed:");
-    console.log(compressedData);
+//     // Decompress
+//     zlib.gunzip(compressedData, (err, originalData) => {
 
-    // Decompress
-    zlib.gunzip(compressedData, (err, originalData) => {
+//         console.log("\nDecompressed:");
+//         console.log(originalData.toString());
 
-        console.log("\nDecompressed:");
-        console.log(originalData.toString());
+//     });
 
-    });
-
-});
+// });
 
 
-// Decompressing a file
-const fs = require("fs");
-const zlib = require("zlib");
+// // Decompressing a file
+// // Reads compressed file
+// const readStream = fs.createReadStream("test.txt.gz");
 
-// Reads compressed file
-const readStream = fs.createReadStream("test.txt.gz");
+// // Creates output file
+// const writeStream = fs.createWriteStream("uncompressed.txt");
 
-// Creates output file
-const writeStream = fs.createWriteStream("uncompressed.txt");
+// // Creates decompressor
+// const gunzip = zlib.createGunzip();
 
-// Creates decompressor
-const gunzip = zlib.createGunzip();
+// // Decompresses file
+// readStream.pipe(gunzip).pipe(writeStream);
 
-// Decompresses file
-readStream.pipe(gunzip).pipe(writeStream);
-
-console.log("File Decompressed Successfully");
+// console.log("File Decompressed Successfully");
