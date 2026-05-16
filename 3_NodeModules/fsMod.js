@@ -13,7 +13,7 @@ const fs = require("fs");
 // console.log(result);
 
 
-//Read File Async Call
+//Read File Async Call - non blocking req
 // fs.readFile("./test.txt","utf-8",(err,result)=>{
 // if(err){
 //     console.log("Error",err); 
