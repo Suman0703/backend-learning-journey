@@ -1,3 +1,4 @@
+//Routing means deciding what response should be given when a user visits a specific URL.
 const express = require("express");
 const app = express();
 
